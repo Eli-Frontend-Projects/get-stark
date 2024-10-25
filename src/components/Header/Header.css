@@ -4,6 +4,14 @@
     font-weight: 1000;
     text-transform: uppercase; 
     color: #4339F2;
+    display: flex;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .header-button {
+        display: none;
+    }
 }
 
 .header-button:hover{
@@ -11,6 +19,10 @@
     border-radius: 5px;
 }
 
+.dropDownComponent{
+    position: absolute;
+    margin-top: 2px;
+}
 .dropDownHeading{
     color:#4339F2;
     font-size: 20px;
@@ -70,6 +82,7 @@
     grid-template-rows: 1fr 1fr; 
     gap: 10px;
     grid-auto-flow: column;
+    margin-left: -30px;
 }
 
 .resourcesDropDownContainer {
@@ -78,6 +91,7 @@
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 10px;
     grid-auto-flow: column;
+    margin-left: -250px;
 }
 
 
@@ -88,4 +102,19 @@
 .centerHorizontally{
     display: grid;
     place-items: center;
+}
+
+.beginHeaderButtonContainer, .endHeaderButtonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.beginHeaderButtonContainer{
+}
+
+.alignBaseline{
+    display: flex;
+    align-items: baseline;
 }

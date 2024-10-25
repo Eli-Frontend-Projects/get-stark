@@ -1,0 +1,20 @@
+.header-logo-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-logo-button:hover {
+    background-color: rgba(58, 13, 246, 0.1);
+    border-radius: 50%;
+  }
+  
+  .header-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
