@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './Header.css';
+import './Header.scss';
 import resourceItemsData  from "./resourcesItemsDropdownData";
 import DropDownItem from "./DropDownItem";
 import DropDownItemImage from "./DropDownItemImage";

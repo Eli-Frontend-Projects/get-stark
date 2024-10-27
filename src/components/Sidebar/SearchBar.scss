@@ -1,0 +1,36 @@
+@import  '../../Variables.scss';
+
+.searchBarContainer {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.setFullWidth {
+    width: 100%;
+    @media (max-width: $break-point-width) {
+        width: 66.67%;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+.centerImage {
+    display: grid;
+    place-items: center;
+}
+
+.searchBarContainer > input {
+    border: none;
+    outline: none; 
+    height: "30px";
+    font-size: 18px;
+}
+
+.searchBarContainer > input:focus{
+    border: none;
+    outline: none; 
+}

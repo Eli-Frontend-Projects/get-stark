@@ -1,0 +1,29 @@
+@import  '../../Variables.scss';
+
+.menu-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: $break-point-width) {
+    .menu-btn{
+        display: none;
+    }
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+.menu-btn:hover svg path {
+    stroke: var(--button-hover-color); 
+}
+
+.menu-btn svg path {
+    transition: stroke 0.2s ease-in-out;
+}

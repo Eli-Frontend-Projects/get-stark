@@ -1,21 +1,37 @@
+@import  '../../Variables.scss';
+
+.headerContainer{
+    display: flex; 
+    justify-content: space-around;
+    background-color: var(--header-color);
+}
+
+@media (max-width: $break-point-width) {
+    .headerContainer{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0px;
+    }
+}
+
 .header-button{
-    color:#4339F2;
-    font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--theme-color);
     font-weight: 1000;
     text-transform: uppercase; 
-    color: #4339F2;
     display: flex;
     position: relative;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $break-point-width) {
     .header-button {
         display: none;
     }
 }
 
 .header-button:hover{
-    border:#4339F2;
+    border: solid var(--button-hover-color);
     border-radius: 5px;
 }
 
@@ -24,7 +40,7 @@
     margin-top: 2px;
 }
 .dropDownHeading{
-    color:#4339F2;
+    color: var(--theme-color);
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -39,14 +55,14 @@
 }
 
 .dropDownItemImage{
-    background-color: lightpink;
-    border: solid 2px lightpink;
+    background-color: var(--theme-color-light);
+    border: solid 2px  var(--theme-color-light);
     border-radius: 2%;
     padding: "0px";
 }
 
 .dropDownItemImage:hover{
-    border: solid 2px rgb(250, 165, 180);
+    border: solid 2px var(--button-hover-color);
     
 }
 
@@ -67,13 +83,13 @@
 }
 
 .dropDownItem:hover{
-    background-color: lightpink;
+    background-color: var(--theme-color-light);
     border-radius: 2%;
 }
 
 .url{
     text-decoration: underline;
-    color:#4339F2;
+    color: var(--theme-color);
 }
 
 .useCaseContainer {
@@ -83,6 +99,7 @@
     gap: 10px;
     grid-auto-flow: column;
     margin-left: -30px;
+    background-color: white;
 }
 
 .resourcesDropDownContainer {
@@ -104,14 +121,11 @@
     place-items: center;
 }
 
-.beginHeaderButtonContainer, .endHeaderButtonContainer{
+.headerButtonContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap:20px;
-}
-
-.beginHeaderButtonContainer{
 }
 
 .alignBaseline{

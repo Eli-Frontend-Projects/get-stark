@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './Header.css';
+import './Header.scss';
 import { useCaseItems } from "./useCaseItemsDropdownData";
 import DropDownItem from "./DropDownItem";
 import DropDownItemImage from "./DropDownItemImage";

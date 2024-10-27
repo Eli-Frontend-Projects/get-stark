@@ -1,0 +1,87 @@
+@import  '../../Variables.scss';
+
+.Sidebar{
+    font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100%;
+
+}
+
+.SidebarMenuCollection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+@media (min-width: $break-point-width) {
+    .Sidebar{
+        width: 280px;
+        min-width: 280px;
+    }
+
+    .SidebarMenuCollection{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+}
+
+.flipOrderOnBreakpoint{
+    @media (max-width: $break-point-width) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.disappearLessThanBreakpoint{
+    @media (min-width: $break-point-width) {
+        display: none;
+    }
+}
+
+.appearGreaterThanBreakpoint{
+    @media (max-width: $break-point-width) {
+        display: none;
+    }
+}
+
+.alignStart{
+    display: "flex";
+    align-self: "flex-start";
+}
+
+.LibraryBtn{
+    @extend .alignStart;
+    @extend .disappearLessThanBreakpoint;
+}
+
+.HomeBtn{
+    @extend .alignStart;
+    @extend .appearGreaterThanBreakpoint;
+}
+
+.StarkContributionContainer{
+    background-color: var(--theme-color-light);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    @extend .appearGreaterThanBreakpoint;
+}
+
+.StarkContributionContainer>:first-child{
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+
+.StarkContributionContainer >:last-child{
+    background-color: var(--theme-color);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+}

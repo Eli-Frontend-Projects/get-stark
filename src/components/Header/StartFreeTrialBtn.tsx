@@ -1,5 +1,5 @@
 import React from 'react';
-import './StartFreeTrialBtn.css';
+import './StartFreeTrialBtn.scss';
 
 const StartFreeTrialBtn: React.FC = () => {
     return (

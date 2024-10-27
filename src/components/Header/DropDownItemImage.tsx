@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Header.css';
+import './Header.scss';
 
 type DropDownItemImageProps = {
     imagePath: string;

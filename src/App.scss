@@ -1,0 +1,45 @@
+:root {
+    --theme-color: #4339F2;
+    --theme-color-light: #f3e8ff;
+    --button-hover-color: #4339F2;
+    --deep-grey: #2E2E2E;
+    --use-cases-menudropdown-text-color: black;
+    --menu-vertical-divider-line-color: #E5E5E5;
+    --header-color:#f6f6eb;
+}
+
+body {padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.full-page-section { padding: 50px; min-height: 100vh; }
+
+.container{
+  min-height: 100vh;
+  display: grid;
+  grid-template: 
+  "header header" auto
+  "sidebar main-content" 1fr
+  "footer footer" auto
+  /auto 1fr
+  ;
+}
+
+header{
+  grid-area: header;
+  height: 70px;
+}
+
+aside{
+  grid-area: sidebar;
+}
+
+main{
+  grid-area: main-content;
+}
+
+footer{
+  grid-area: footer;
+}

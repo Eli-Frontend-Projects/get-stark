@@ -1,5 +1,5 @@
 import React from 'react';
-import './HeaderLogoButton.css';
+import './HeaderLogoButton.scss';
 
 const HeaderLogoButton: React.FC = () => {
   return (

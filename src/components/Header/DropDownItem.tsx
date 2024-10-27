@@ -1,6 +1,6 @@
 // Import DropDownItemProps as a type
 import * as React from 'react';
-import './Header.css';
+import './Header.scss';
 import type {DropDownItemProps}  from './DropDownItemProps';
 
 const DropDownItem: React.FC<DropDownItemProps> = ({ heading, description }) => {

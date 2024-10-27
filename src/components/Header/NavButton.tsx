@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import './Header.css';
+import './Header.scss';
 
 interface NavButtonProps {
   button_name: string;

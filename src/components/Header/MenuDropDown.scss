@@ -1,0 +1,66 @@
+@import  '../../Variables.scss';
+
+.MenuDropDown{
+    font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    background-color: var(--header-color);
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    left: 0
+}
+
+@media (min-width: $break-point-width) {
+    .MenuDropDown{
+        display: none;
+    }
+}
+
+
+.MenuDropDown hr {
+    width: 100%;        
+    flex-shrink: 0;
+}
+
+.MenuDropDown section{
+    margin-top: 15px;
+}
+.MenuDropDown > p, .MenuDropDown > section p{
+    color: var(--theme-color);
+    font-weight: bold;
+}
+
+.MenuDropDown > section p {
+    color: var(--theme-color);
+    margin-left: 10px; 
+    padding-left: 24px;
+}
+
+.MenuDropDown > section > div:first-child{
+    margin-bottom: 0px;
+    color: var(-use-cases-menudropdown-text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.UseCaseListContainer {
+    font-weight: bold;
+    position: relative;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+.UseCaseListContainer::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+}
+
+.MenuDropDown > p {
+    text-transform: uppercase;
+}
