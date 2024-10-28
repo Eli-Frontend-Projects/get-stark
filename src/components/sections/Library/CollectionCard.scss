@@ -1,0 +1,15 @@
+.CollectionCard{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 350px;
+    width: var(--tile-width);
+    box-sizing: border-box;
+    background-color: var(--header-color);
+}
+
+.CollectionCard p{
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+}

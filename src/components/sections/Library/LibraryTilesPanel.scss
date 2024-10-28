@@ -1,0 +1,66 @@
+@import  '../../../Variables.scss';
+
+$tile-gap: 40px;
+
+.tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--tile-width));
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: $tile-gap;
+}
+
+@media (max-width: $break-point-width) {
+    .library-tiles-panel{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: $break-point-width) {
+    .tiles-grid-bp-expand{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.library-tiles-panel {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+@media (max-width: $break-point-width) {
+    .library-tiles-panel{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #0f2a47;
+    margin: 0;
+    font-size: 50px;
+    padding: 0;
+}
+
+.view-all {
+    color: var(--theme-color);
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.panel-description {
+    font-weight: 400;
+    color: #0f2a47;
+    font-size: 20px;
+}

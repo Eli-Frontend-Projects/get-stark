@@ -1,3 +1,5 @@
+@import  './Variables.scss';
+
 :root {
     --theme-color: #4339F2;
     --theme-color-light: #f3e8ff;
@@ -6,6 +8,8 @@
     --use-cases-menudropdown-text-color: black;
     --menu-vertical-divider-line-color: #E5E5E5;
     --header-color:#f6f6eb;
+    --tile-width: 300px;
+    --footer-color: #10284b;
 }
 
 body {padding: 0; 
@@ -14,7 +18,14 @@ body {padding: 0;
    font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.full-page-section { padding: 50px; min-height: 100vh; }
+main{
+  display: flex; 
+  flex-direction:column;
+  width:100%; 
+  gap:40px
+}
+
+.full-page-section { padding: 20px; min-height: 100vh; }
 
 .container{
   min-height: 100vh;
@@ -42,4 +53,16 @@ main{
 
 footer{
   grid-area: footer;
+  background-color: var(--footer-color);
+}
+
+.Library{
+  display: flex;
+}
+
+@media (max-width: $break-point-width) {
+    .Library{
+        flex-direction: column;
+        margin-left: 0px;
+    }
 }

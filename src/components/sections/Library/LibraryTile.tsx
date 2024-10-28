@@ -5,14 +5,15 @@ interface LibraryTileProps {
   image_path: string;
   title: string;
   description: string;
+  expandAtBreakpoint?: boolean;
 }
 
-const LibraryTile: React.FC<LibraryTileProps> = ({ image_path, title, description }) => {
+const LibraryTile: React.FC<LibraryTileProps> = ({ image_path, title, description, expandAtBreakpoint = true }) => {
   return (
-    <div className="LibraryTileContainer">
+    <div className={`LibraryTileContainer ${expandAtBreakpoint ? 'library-tile-bp-expand' : ''}`}>
         <div>
             <div className='LibraryImageDiv'>
-                <img src={image_path} alt={`title {image}`} width="40px" height="40px"/>
+                <img src={image_path} alt={`title ${title}`} width="40px" height="40px"/>
             </div>
             <p>{title}</p>
             <p>{description}</p>

@@ -17,6 +17,7 @@ const Sidebar: React.FC = () => {
                             <p>Categories</p>
                             <ChevronDown /> 
                     </div>
+                </div>
                     <div className='StarkContributionContainer'>
                         <p>Contribute to Stark</p>
                         <p>Got any accessibility resources or news?</p>
@@ -25,7 +26,6 @@ const Sidebar: React.FC = () => {
                             Submit a resource
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     );

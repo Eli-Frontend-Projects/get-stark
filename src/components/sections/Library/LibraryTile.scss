@@ -1,9 +1,12 @@
+@import  '../../../Variables.scss';
+
 .LibraryTileContainer{
     border: 1px solid grey;
     border-radius: 10px;
     padding: 30px;
-    width: 220px;
+    width: var(--tile-width);
     padding-bottom: 70px;
+    box-sizing: border-box;
 }
 
 .LibraryTileContainer:hover{
@@ -38,4 +41,11 @@
     font-size: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+@media (max-width: $break-point-width) {
+    .library-tile-bp-expand{
+        margin-left: 0px;
+        width: 100%;
+    }
 }

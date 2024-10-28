@@ -1,0 +1,10 @@
+@import  '../../../Variables.scss';
+
+$tile-gap: 40px;
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--tile-width));
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: $tile-gap;
+}
